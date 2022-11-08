@@ -1,0 +1,2 @@
+#!/bin/bash
+PYSPARK_PYTHON=python3  /spark/bin/spark-submit --master spark://spark-master:7077 --driver-cores 2 --executor-cores 2 --driver-memory 2G --executor-memory 2G --packages org.xerial:sqlite-jdbc:3.30.1 preparation.py
